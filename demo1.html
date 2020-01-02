@@ -1,162 +1,216 @@
 <!DOCTYPE html>
-<html lang=en>
-
-    <head>
-        <meta charset="UTF-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=div, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-        <style>
-            * {
-                margin: 0px;
-                padding: 0px;
-            }
-            
-            #mainDiv{
-                background-color: black;
-                color: white;
-                margin-top: 0px;
-            }
-            #mainDiv #logo 
-            {
-                float: left;
-            }
-            #mainDiv #searchBar
-            {
-                float: right;
-                background-color: rgb(22, 23, 23);
-                border: 1px  black;
-                color: white;
-                font-size: 16px;
-                border-radius: 5px;
-            }
-            #mainDiv nav 
-            {
-                text-align: right;
-            }
-            #mainDiv li
-            {   
-                display: inline-block;
-                margin-top: 60px;
-                margin-left: 20px;
-            }
-            #mainDiv li a 
-            {
-                padding:5px;
-                text-decoration: none;
-                font-size: 18px;
-                font-family: Arial, Helvetica, sans-serif;
-            }
-            #mainDiv li#home a  
-            {
-                color: red;
-                border: 0.5px solid white;
-            }
-            #mainDiv li a:hover 
-            {
-            border: white;
-            background-color: grey;
-            } 
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
         
-            .titull 
-            {
-        
-                font-size: 25px;
-                font-style: italic;
-            }
-            #td1
-            {
-                background-color: #e8e8e8;
-                padding:20px;
-                border: 1px solid gray;
-              
-            }
-            
-            .Foto1{
-                width: auto;
-                height: auto;
+        #mainDiv{
+            background-color: black;
+            color: white;
+            margin-top: 0px;
+        }
+        #mainDiv #logo 
+        {
+            float: left;
+        }
+        #mainDiv #searchBar
+        {
+            float: right;
+            background-color: rgb(22, 23, 23);
+            border: 1px  black;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        #mainDiv nav 
+        {
+            text-align: right;
+        }
+        #mainDiv li
+        {   
+            display: inline-block;
+            margin-top: 60px;
+            margin-left: 20px;
+        }
+        #mainDiv li a 
+        {
+            padding:5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #mainDiv li#home a  
+        {
+            color: red;
+            border: 0.5px solid white;
+        }
+        #mainDiv li a:hover 
+        {
+        border: white;
+        background-color: grey;
+        } 
     
-                overflow: hidden;
-                
-            }
-            #circle
-            {
-                position: absolute;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                margin-top: 35%;
-                margin-left: 38%;
-            }
-            #circle1
-            {
-                position: absolute;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                margin-top: 35%;
-                margin-left: 48%;
-            }
-            #circle2
-            {
-                position: absolute;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                margin-top: 35%;
-                margin-left: 58%;
-            }
-            .f1{
-                
-                transform: translate(auto);
-            }
-            .navi
-            {
-                position: absolute;
-                bottom: -80px;
-                left: 50%;
-                transform: translateX(-50%);
-                display: flex;
-            }
-            .navi1
-            {
-                width: 70px;
-                height: 10px;
-                border: 2px solid white;
-                margin: 15px;
-                cursor: pointer;
-                transition: 0.4s;
-            }
+        .titull 
+        {
+    
+            font-size: 25px;
+            font-style: italic;
+        }
+        #td1
+        {
+            background-color: #e8e8e8;
+            padding:20px;
+            border: 1px solid gray;
+          
+        }
+        
+        .Foto1{
+            width: auto;
+            height: auto;
+
+            overflow: hidden;
+            
+        }
+        #circle
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-top: 35%;
+            margin-left: 38%;
+        }
+        #circle1
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-top: 35%;
+            margin-left: 48%;
+        }
+        #circle2
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-top: 35%;
+            margin-left: 58%;
+        }
+        .f1{
+            
+            transform: translate(auto);
+        }
+        .navi
+        {
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        .navi1
+        {
+            width: 70px;
+            height: 10px;
+            border: 2px solid white;
+            margin: 15px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .navi1:hover{
+            background: white;
+        }
+        input[name="r"]
+        {
+            position: absolute;
+            visibility: hidden;
+        }
+        .Foto2
+        {
+            width: 500%;
+            height: 100%;
+            display: flex;
            
-            .navi1:hover{
-                background: white;
-            } 
-            </style>
-    </head>
+        }
+        .Foto3
+        {
+            width: 20%;
+            transition: 0.6s;
+        }
+        .Foto3 img{
+            width: 100%;
+            height: 100%;
+        }
+        #r1:checked ~ .f3{
+            margin-left: 0;
+        }
+        
+        #r2:checked ~ .f3{
+            margin-left: -20%;
+        }
+        
+        #r3:checked ~ .f3{
+            margin-left: -40%;
+        }
+        
+        #r4:checked ~ .f3{
+            margin-left: -60%;
+        }
+       
+        .dot {
+             height: 30px;
+             width: 30px;
+            background-color:rgb(22, 23, 23);
+            border-radius: 50%;
+            display: inline-block;
+}
+    </style>
+</head>
 <body>
+    <div id="mainDiv" style="width: 100%;">
 
-    <header  >
-        <div>
-             <a href="alt.html"><img id="logo" src="mail.jpg" alt="" height="30px" width="30px"></a>
-        </div>
-        <div>
-            <input id="searchBar" type="text" placeholder="Search"></input>
-        </div>
-    </header>
+        <header  >
+            <div>
+                 <a href="alt.html"><img id="logo" src="mail.jpg" alt="" height="30px" width="30px"></a>
+            </div>
+            <div>
+                <input id="searchBar" type="text" placeholder="Search"></input>
+            </div>
+        </header>
 
-    <nav >
-        <ul>
-            <li id="home"><a href="alt.html">Home</a></li>
-            <li> | </li> 
-            <li> <a href="style.html">Style </a></li> 
-            <li> | </li> 
-            <li> <a href="demo.html">Demo </a></li> 
-            <li> | </li> 
-            <li> <a href="">Gallery </a></li> 
-            <li> |</li> 
-            <li> <a href="new_page.html">Contact</a></li> 
-        </ul>
-    </nav>
+        <section>
+            <table id="tabela2" style="padding-left: 32px; padding-right: 32px;" cellspacing="12px">
+                <tr>
+
+                   
+                </tr>
+                <tr style="width: 1cm; background-color: white;" >
+                   
+                </tr>
+                
+                <tr>
+                    
+                    
+                 
+
+                </tr>
+                <tr>
+                 
+                </tr>
+            </table>
+        </section>
+    </article>
+
+
     <footer style="margin:0px; background-color: #e8e8e8">
         <div>
         <table style="margin:0px; padding:0px;">

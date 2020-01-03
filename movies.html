@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=div, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #mainDiv{
+            background-color: black;
+            color: white;
+            margin-top: 0px;
+        }
+        #mainDiv #logo 
+        {
+            float: left;
+        }
+        #mainDiv #searchBar
+        {
+            float: right;
+            background-color: rgb(22, 23, 23);
+            border: 1px  black;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        #mainDiv nav 
+        {
+            text-align: right;
+        }
+        #mainDiv li
+        {   
+            display: inline-block;
+            margin-top: 60px;
+            margin-left: 20px;
+        }
+        #mainDiv li a 
+        {
+            padding:5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #mainDiv li#home a  
+        {
+            color: red;
+            border: 0.5px solid white;
+        }
+        #mainDiv li a:hover 
+        {
+        border: white;
+        background-color: grey;
+        } 
+    
+        .titull 
+        {
+    
+            font-size: 25px;
+            font-style: italic;
+        }
+     
+        
+        .Foto1{
+            width: auto;
+            height: auto;
+
+            overflow: hidden;
+            
+        }
+        #td1
+        {
+            background-color: #e8e8e8;
+            padding: 10px;
+            padding-bottom:10px;
+            border: 1px solid gray;
+            padding-top: 20px;
+            text-align: center;
+          
+        }
+        #circle
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-top: 35%;
+            margin-left: 38%;
+        }
+        #circle1
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-top: 35%;
+            margin-left: 48%;
+        }
+        #circle2
+        {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-top: 35%;
+            margin-left: 58%;
+        }
+        .f1{
+            
+            transform: translate(auto);
+        }
+        .navi
+        {
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        .navi1
+        {
+            width: 70px;
+            height: 10px;
+            border: 2px solid white;
+            margin: 15px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+        .navi1:hover{
+            background: white;
+        }
+        input[name="r"]
+        {
+            position: absolute;
+            visibility: hidden;
+        }
+        .Foto2
+        {
+            width: 500%;
+            height: 100%;
+            display: flex;
+           
+        }
+        .Foto3
+        {
+            width: 20%;
+            transition: 0.6s;
+        }
+        .Foto3 img{
+            width: 100%;
+            height: 100%;
+        }
+        #r1:checked ~ .f3{
+            margin-left: 0;
+        }
+        
+        #r2:checked ~ .f3{
+            margin-left: -20%;
+        }
+        
+        #r3:checked ~ .f3{
+            margin-left: -40%;
+        }
+        
+        #r4:checked ~ .f3{
+            margin-left: -60%;
+        }
+       
+        .dot {
+             height: 30px;
+             width: 30px;
+            background-color:rgb(22, 23, 23);
+            border-radius: 50%;
+            display: inline-block;
+}
+    </style>
+</head>
+<body>
+    <div id="mainDiv" style="width: 100%;">
+
+        <header  >
+            <div>
+                 <a href="alt.html"><img id="logo" src="movie-logo.png" alt="" height="100px" width="100px" style="margin-left: 70px;"></a>
+            </div>
+            <div>
+                <input id="searchBar" type="text" placeholder="Search"></input>
+            </div>
+        </header>
+
+        <nav >
+            <ul>
+                <li id="home"><a href="alt.html">Home</a></li>
+                <li> | </li> 
+                <li> <a href="style.html">Style </a></li> 
+                <li> | </li> 
+                <li> <a href="demo1.html">Demo </a></li> 
+                <li> | </li> 
+                <li> <a href="">Gallery </a></li> 
+                <li> |</li> 
+                <li> <a href="new_page.html">Contact</a></li> 
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <div class="Foto1 f1">
+            <div class="Foto2">
+            <input type="radio" name="r" id="r1" checked>
+            <input type="radio" name="r" id="r2">
+            <input type="radio" name="r" id="r3">
+            <input type="radio" name="r" id="r4">
+
+            <div>
+                <img id="circle" src="foto.jpg" href="" alt="">
+                <img id="circle1" src="foto.jpg" href="" alt="">
+                <img id="circle2" src="foto.jpg" href="" alt="">
+            </div>
+            
+                   <div class="Foto3 f3" >
+                   <img src="foto.jpg" alt="">
+                    </div>
+                    <div class="Foto3" >
+                    <img src="foto.jpg" alt="" >
+                     </div>
+                     <div class="Foto3" >
+                       <img src="foto.jpg" alt=" " >
+                       </div>
+                       <div class="Foto3" >
+                        <img src="foto.jpg" alt="" >
+                        </div>
+                    </div>
+        
+        <div class="navi">
+            <label for="r1" class="navi1"></label>
+            <label for="r2" class="navi1"></label>
+            <label for="r3" class="navi1"></label>
+            <label for="r4" class="navi1"></label>
+        </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <article>
+        <section >
+
+            <table id="tabela1" cellspacing="20px;" >
+
+                <tr>
+                    <td colspan="6"  style="background-color: #e8e8e8; padding: 25px;border: 1px solid gray;" >
+                       <p> <spam class="titull" style="text-align:left;">Top Rated MOVIES  </spam><spam style="text-align:right; color: red; padding-left: 450px;">of this decade.</spam></p>
+                    </td>
+                </tr>
+                <tr style="padding-top:82px;">
+
+                    <td style="background-color: white; border: solid white 1px;">
+                    </td>
+
+                    <td id="td1" >
+                        <img src="irishman.jpg" alt="" height="178px" width="178px">
+                        <p>The IRISHMAN </p>
+                        <a href="#irishmanmovie" style="color:red; text-decoration: none;">View More &#8811;</a>
+                    </td>
+
+                    <td id="td1" >
+                        <img src="Birdbox.png" alt="" height="178px" width="178px">
+                        <p>Birdbox </p>
+                        <a href="#birdboxmovie" style="color: red; text-decoration: none;">View More &#8811;</a>
+                    </td>
+
+                    <td id="td1">
+                        <img src="girli.png" alt="" height="178px" width="178px" >
+                        <p>Girl, INTERRUPTED </p>
+                        <a href="#gimovie" style="color: red; text-decoration: none;">View More &#8811;</a>
+                    </td>
+
+                    <td id="td1">
+                        <img src="interstellar.jpg" alt="" height="178px" width="178px">
+                        <p>INTERSTELLAR</p>
+                        <a href="#interstellarmovie" style="color: red; text-decoration: none;">View More &#8811;</a>
+                    </td>
+                    <td id="td1">
+                        <img src="tcinw.jpg" alt="" height="178px" width="178px">
+                        <p>The Cabin in the Woods</p>
+                        <a href="#tcinwmovie" style="color: red; text-decoration: none;">View More &#8811;</a>
+                    </td>
+
+                    <td style="background-color: white; border: white solid 1px;">
+                    </td>
+                    
+                </tr>
+            </table>
+        </section>
+<br>
+        <section>
+            <img src="movies1.jpg" style="margin-left: 42.5px" width="1080px" height="420px">
+            <table id="tabela2" style="padding-left: 32px; padding-right: 32px;" cellspacing="12px">
+                <tr style="width: 1cm; background-color: white;" >
+                    <td colspan="4" >
+                        &nbsp;
+                    </td>
+                </tr>
+                
+                <tr>
+                    
+                    <td colspan="1" rowspan="2">
+                        <a href="https://www.netflix.com/rs/title/80175798" target="_newblank"><img style="padding: 12px; margin-bottom:65px ; border:1px solid gray; background-color: lightgrey; " src="irishman.jpg" alt="Irishman" height="150px" width="150px"></a>
+                    </td>
+
+                    <td id="irishmanmovie" colspan="1" rowspan="2" width="320px">
+                        <p style="font-style:italic;">Frank "The Irishman" Sheeran is a man with a lot on his mind. The former labor union high official and hitman, learned to kill serving in Italy during the Second World War. He now looks back on his life and the hits that defined his mob career, maintaining connections with the Bufalino crime family. In particular, the part he claims to have played in the disappearance of his life-long friend, Jimmy Hoffa, the former president of the International Brotherhood of Teamsters, who mysteriously vanished in late July 1975 at the age of 62.</p>
+                    </td>
+
+                    <td id="birdboxmovie" colspan="1" rowspan="1">
+                        <img src="Birdbox.png" alt="" width="80px" height="80px"><br>
+                        <p style="font-style: italic;">Five years after an ominous unseen presence drives most of society to suicide, a mother and her two children make a desperate bid to reach safety.</p>
+                    </td>
+
+                    <td id="gimovie" colspan="1" rowspan="1">
+                        <img src="girli.png" alt="" width="80px" height="80px"><br>
+                        <p style="font-style: italic">Based on writer Susanna Kaysen's account of her 18-month stay at a mental hospital in the late 1960s.</p>
+                    </td>
+
+                </tr>
+                <tr>
+                   <td id="interstellarmovie" colspan="1" rowspan="1">
+                       <img src="interstellar.jpg" alt="" width="80px" height="80px"><br>
+                    <p style="font-style: italic;">A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.</p>
+                   </td> 
+                   <td id="tcinwmovie" colspan="1" rowspan="1">
+                       <img src="tcinw.jpg" alt="" width="80px" height="80px"><br>
+                       <p style="font-style: italic;">Five friends go for a break at a remote cabin, where they get more than they bargained for, discovering the truth behind the cabin in the woods.</p>
+                   </td> 
+                </tr>
+            </table>
+        </section>
+    </article>
+<br>
+<br>
+    <footer style="margin:0px; background-color: #e8e8e8">
+        <div>
+        <table style="margin:0px; padding:0px;">
+
+            <tr>
+                <td colspan="1" rowspan="1" style="padding:1px;" >
+                    <h3 style=" padding-left: 12px;" class="titull">Newsletter</h3>
+                    <p style="padding-left: 12px;" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ea, consectetur voluptate fugit ullam ab.</p>
+                    <div   style=" padding-left: 12px" >
+                    <input  style="border-radius: 7px; background-color: grey; height:28px; font-size: 14px;" type="email">
+                    <button style="background-color: grey; color: red; border-radius: 8px; padding: 7px 20px; display: inline-block; margin-left: 3px; align-self: auto;   "  type="submit">Sign Up</button>
+                    <br>
+                    <h3  style="padding-left:2px;" class="titull">Stay social</h3>
+                    <br>
+                    <div>
+                      <p> <span class="dot"></span> Snapchat <span class="dot"></span> Instagram </p>
+                        <br>
+                    <p > <span class="dot"></span> Twiiter .. <span class="dot"></span> Facebook </p>
+                    </div>
+                    
+                    </div >
+
+                </td>
+
+                <td  colspan="1" rowspan="1">
+                    <h3 style="padding-left: 8px;padding-top:40px; " class="titull">Blogpost</h3>
+                    <h4 style=" padding-left: 8px;" >Title</h4>
+                    <h5  style=" padding-left: 8px;">Author</h5>
+                    <p style=" padding-left: 8px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt temporibus hic ducimus dolor odit aliquam!</p style=" padding-left: 12px;">
+                    <a href=""  style=" float:right;; color: red;">View More &#8811;</a>
+                    <br>
+                    <h4 style="padding-left: 8px;">Title</h4>
+                    <h5 style="padding-left: 8px;">Author</h5 >
+                    <p style="padding-left: 8px;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem sed optio, consequatur accusantium laboriosam nobis.</p>
+                    <a href="" style="float: right; color: red;">View More &#8811;</a>
+                </td>
+              
+                <div style=" padding:0px;">
+                <td colspan="1" rowspan="1">
+                    <h3 class="titull" style="padding-left: 12px;">Latest From Twitter</h3>
+                    <p style="padding-left: 12px; ">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem voluptate quidem. Iusto, vitae.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ratione saepe nam amet officia, eius tenetur expedita nostrum ut rerum maxime illo, animi totam laudantium accusantium? Eius cumque quod illum deleniti perspiciatis tenetur voluptates natus optio corporis numquam? Quis itaque fugit nisi enim laudantium voluptate.
+                        <br>
+                        <br>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur ducimus quis perferendis.
+                    </p>
+    
+                   <a href="" style="float: right; color: red;">Sign up &#8811; </a>
+                </td>
+                </div>
+
+            </tr>
+            <tr>
+                <td colspan="3" style="background-color: black;padding: 10px;padding-bottom: 10px;">
+                <p > <span style="text-align: left;padding-left: 12px; color: white; font-style: italic; font-size:16px;">Copyright &#169; 2013~ All Rights Reserved</span> <span style="font-style: normal; font-size: 16px; float:right; padding-right: 24px;color: white;">Domain Name</span></p>
+    
+                </td>
+            </tr>
+            
+          
+
+
+        </table>
+        </div>
+
+    </footer>
+</body>
+</html>

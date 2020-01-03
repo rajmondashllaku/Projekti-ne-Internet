@@ -12,7 +12,6 @@
         }
         
         #mainDiv{
-            background-image: url(sm.jpg);
             background-color: black;
             color: white;
             margin-top: 0px;
@@ -177,7 +176,26 @@
             background-color:rgb(22, 23, 23);
             border-radius: 50%;
             display: inline-block;
-}
+        }
+        #button {
+            background-color: white;
+            border: 1px solid white;
+            background-image: url("bb.png");
+            background-size:90px 200px;
+            width:90px;
+            height: 200px;
+            
+        }
+        #button1 {
+            background-color: white;
+            border: 1px solid white;
+            background-image: url("aa.png");
+            background-size:90px 200px;
+            width:90px;
+            height: 200px;
+        }
+
+
     </style>
 </head>
 <body>
@@ -257,7 +275,7 @@
                 <tr style="padding-top:82px;">
 
                     <td style="background-color: white; border: solid white 1px;">
-                        <button>Sh</button>
+                        <button id="button1">&nbsp;&nbsp;&nbsp;</button>
                     </td>
 
                     <td id="td1" >
@@ -285,7 +303,7 @@
                     </td>
 
                     <td style="background-color: white; border: white solid 1px;">
-                        <button>Sh</button>
+                        <button id="button">&nbsp;&nbsp;</button>
                     </td>
                     
                 </tr>
@@ -342,74 +360,88 @@
     </article>
 <br>
 <br>
-    <footer style="margin:0px; background-color: #e8e8e8">
-        <div>
-        <table style="margin:0px; padding:0px;">
+<footer style=" background-color: #e8e8e8">
+    <div>
+    <table>
 
-            <tr>
-                <td colspan="1" rowspan="1" style="padding:1px;" >
-                    <h3 style=" padding-left: 12px;" class="titull">Newsletter</h3>
-                    <p style="padding-left: 12px;" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ea, consectetur voluptate fugit ullam ab.</p>
-                    <div   style=" padding-left: 12px" >
-                    <input  style="border-radius: 7px; background-color: grey; height:28px; font-size: 14px;" type="email">
-                    <button style="background-color: grey; color: red; border-radius: 8px; padding: 7px 20px; display: inline-block; margin-left: 3px; align-self: auto;   "  type="submit">Sign Up</button>
-                    <br>
-                    <h3  style="padding-left:2px;" class="titull">Stay social</h3>
-                    <br>
-                    <div>
-                      <p> <span class="dot"></span> Snapchat <span class="dot"></span> Instagram </p>
+        <tr>
+            <td colspan="1" rowspan="1" >
+                <div style="margin-right: 80px;">
+
+                    <h3 style=" padding-left: 15px; margin-bottom: 15px; margin-top: 1px;" class="titull">Newsletter</h3>
+                    <p style="padding-left: 15px; margin-bottom: 18px;" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ea, consectetur voluptate fugit ullam ab.</p>
+                    <div   style=" padding-left: 15px;">
+                        <div style="display: inline-flex;">
+
+                            <input  style="border-radius: 7px; background-color: grey; height:28px; font-size: 14px;" type="email">
+                            <button style="background-color: grey; color: red; border-radius: 8px; padding: 7px 20px; display: inline-block; margin-left: 3px; margin-bottom: 18px; align-self: auto;   "  type="submit">Sign Up</button>
+                        </div>
                         <br>
-                    <p > <span class="dot"></span> Twiiter .. <span class="dot"></span> Facebook </p>
-                    </div>
-                    
+                        <h3  style="padding-left:2px; margin-bottom: 18px;" class="titull">Stay social</h3>
+                        <br>
+                        <div>
+                            <p style="margin-bottom: 18px;"> <span class="dot"><a  style=" color: rgb(22, 23, 23);"href="http://snapchat.com" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;&nbsp; </a></span> Snapchat <span class="dot"><a href="http://instagram.com" style="color:rgb(22, 23, 23) ;" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;&nbsp;</a></span> Instagram </p>
+                            <br>
+                            <p > <span class="dot"><a href="http://twitter.com" style="color: rgb(22, 23, 23);" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;&nbsp;</a></span> Twiiter .. <span class="dot"><a href="http://facebook.com" style="color: rgb(22, 23, 23);" target="_blank" rel="noopener noreferrer">&nbsp;&nbsp;&nbsp;&nbsp;</a></span> Facebook </p>
+                        </div>
+                        
                     </div >
-
-                </td>
-
-                <td  colspan="1" rowspan="1">
-                    <h3 style="padding-left: 8px;padding-top:40px; " class="titull">Blogpost</h3>
-                    <h4 style=" padding-left: 8px;" >Title</h4>
-                    <h5  style=" padding-left: 8px;">Author</h5>
-                    <p style=" padding-left: 8px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt temporibus hic ducimus dolor odit aliquam!</p style=" padding-left: 12px;">
-                    <a href=""  style=" float:right;; color: red;">View More &#8811;</a>
-                    <br>
-                    <h4 style="padding-left: 8px;">Title</h4>
-                    <h5 style="padding-left: 8px;">Author</h5 >
-                    <p style="padding-left: 8px;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem sed optio, consequatur accusantium laboriosam nobis.</p>
-                    <a href="" style="float: right; color: red;">View More &#8811;</a>
-                </td>
-              
-                <div style=" padding:0px;">
-                <td colspan="1" rowspan="1">
-                    <h3 class="titull" style="padding-left: 12px;">Latest From Twitter</h3>
-                    <p style="padding-left: 12px; ">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos autem voluptate quidem. Iusto, vitae.
-                        <br>
-                        <br>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo ratione saepe nam amet officia, eius tenetur expedita nostrum ut rerum maxime illo, animi totam laudantium accusantium? Eius cumque quod illum deleniti perspiciatis tenetur voluptates natus optio corporis numquam? Quis itaque fugit nisi enim laudantium voluptate.
-                        <br>
-                        <br>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur ducimus quis perferendis.
-                    </p>
-    
-                   <a href="" style="float: right; color: red;">Sign up &#8811; </a>
-                </td>
+                    
                 </div>
-
-            </tr>
-            <tr>
-                <td colspan="3" style="background-color: black;padding: 10px;padding-bottom: 10px;">
-                <p > <span style="text-align: left;padding-left: 12px; color: white; font-style: italic; font-size:16px;">Copyright &#169; 2013~ All Rights Reserved</span> <span style="font-style: normal; font-size: 16px; float:right; padding-right: 24px;color: white;">Domain Name</span></p>
-    
                 </td>
-            </tr>
-            
+
+            <td  colspan="1" rowspan="1">
+                <div style="margin-right: 80px;">
+
+                    <h3 style="padding-left: 8px; margin-bottom: 12px; margin-top: 32px; " class="titull">Blogpost</h3>
+                    <h4 style=" padding-left: 8px; margin-bottom: 4px;" >Title</h4>
+                    <h5  style=" padding-left: 8px; margin-bottom: 8px;">Author</h5>
+                    <p style=" padding-left: 8px; margin-bottom: 10px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt temporibus hic ducimus dolor odit aliquam!</p style=" padding-left: 12px;">
+                        <a href=""  style=" float:right;; color: red; margin-bottom: 10px;">View More &#8811;</a>
+                        <br>
+                        <h4 style="padding-left: 8px; margin-bottom: 4px;">Title</h4>
+                        <h5 style="padding-left: 8px; margin-bottom: 8px;">Author</h5 >
+                            <p style="padding-left: 8px; margin-bottom: 5px;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem sed optio, consequatur accusantium laboriosam nobis.</p>
+                            <a href="" style="float: right; color: red; margin-bottom: 30px;">View More &#8811;</a>
+                        </div>
+                        </td>
           
+            <div style=" padding:0px;">
+            <td colspan="1" rowspan="1">
+                <div style="padding-left: 12px;">
+                
+                    <h3 class="titull" style="margin-top: 8px; margin-bottom: 18px;">Latest From Twitter</h3>
+                    <p >Lorem, ipsum dolor  lorem 13
+                        sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero facilis error facere. amet consectetur adipisicing elit. Qui error eos molestiae assumenda animi quos distinctio voluptas nostrum quaerat dignissimos reiciendis, commodi praesentium reprehenderit accusamus fugit, saepe dolorum odit mollitia! Debitis corporis sed voluptatibus. Nihil eaque eos quam recusandae debitis eius perspiciatis pariatur cum doloribus
+                        .
+                        <br>
+                        <br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit commodi quas pariatur rem autem natus, a mollitia distinctio aperiam doloribus corporis voluptas blanditiis nobis magnam quia maiores dolorem provident voluptate. Quidem temporibus debitis beatae aperiam ipsam consequuntur quia. Saepe corporis pariatur odio cupiditate quod? Culpa.
+                        <br>
+                        <br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis soluta fuga, deserunt nam fugiat praesentium tenetur sapiente! Odit, molestiae quisquam. Minima vel cumque voluptatibus inventore vero! Autem animi deserunt a nisi placeat, officiis optio?
+                        <br>
+                        <br> 
+                    </p>
+                    
+                    <a href="" style="float: right; color: red;">Sign up &#8811; </a>
+                </div>
+            </td>
+            </div>
 
+        </tr>
+        <tr>
+            
+            
+                <td colspan="3" style="background-color: black;padding: 20px;">
+                    <p > <span style="text-align: left;padding-left: 12px; color: white; font-style: italic; font-size:16px;">Copyright &#169; 2013~ All Rights Reserved</span> <span style="font-style: normal; font-size: 16px; float:right; padding-right: 24px;color: white;">Domain Name</span></p>
+                    
+                </td>
+            </div>
+        </tr>
+    </table>
+    </div>
 
-        </table>
-        </div>
-
-    </footer>
+</footer>
 </body>
 </html>

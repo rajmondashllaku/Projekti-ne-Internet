@@ -6,11 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
- * {
+      * {
             margin: 0px;
             padding: 0px;
         }
+        .star{
+          color: goldenrod;
+          font-size: 2.0rem;
+          padding: 0px; /* space out the stars */
+        }
+        .star::before{
+          content: '\2606';    /* star outline */
+          cursor: pointer;
+        }
+        .star.rated::before{
+          /* the style for a selected star */
+          content: '\2605';  /* filled star */
+        }
         
+        .stars{
+            counter-reset: rateme 0;   
+            font-size: 2.0rem;
+            font-weight: 900;
+        }
+        .star.rated{
+            counter-increment: rateme 1;
+        }
+        .stars::after{
+            content: counter(rateme) '/5';
+        }
+        #td1
+        {
+            background-color: lightcyan;
+            padding: 10px;
+            padding-bottom:10px;
+            border: 1px solid gray;
+            padding-top: 20px;
+            text-align: center;
+          
+        }
         #mainDiv{
             background-color: black;
             background-image: url(sm.jpg);
@@ -70,10 +104,48 @@
              width: 30px;
             background-color:rgb(22, 23, 23);
             border-radius: 50%;
-            display: inline-block;}
+            display: inline-block;
+        }
+            
     </style>
+    
     </head>
-    <body>
+    <body style="background-color:darkslategrey;">
+
+        <script>
+        
+            //initial setup
+            document.addEventListener('DOMContentLoaded', function(){
+                let stars = document.querySelectorAll('.star');
+                stars.forEach(function(star){
+                    star.addEventListener('click', setRating); 
+                });
+                
+                let rating = parseInt(document.querySelector('.stars').getAttribute('data-rating'));
+                let target = stars[rating - 1];
+                target.dispatchEvent(new MouseEvent('click'));
+            });
+            function setRating(ev){
+                let span = ev.currentTarget;
+                let stars = document.querySelectorAll('.star');
+                let match = false;
+                let num = 0;
+                stars.forEach(function(star, index){
+                    if(match){
+                        star.classList.remove('rated');
+                    }else{
+                        star.classList.add('rated');
+                    }
+                    //are we currently looking at the span that was clicked
+                    if(star === span){
+                        match = true;
+                        num = index + 1;
+                    }
+                });
+                document.querySelector('.stars').setAttribute('data-rating', num);
+            }
+            
+        </script> 
         <div id="mainDiv" >
            
     <header > 
@@ -106,14 +178,164 @@
 
         <article>
 <section>
-    
-</section>
+   
+    <h1 style="text-align:center; font-style:italic;font-family:Arial, Helvetica, sans-serif;font-size:x-large;margin-left: 30px;color:darkred">MOVIE RATINGS</h1>
+    <p style="background-color:lightcyan;text-align:center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: darkred; margin-left:30px;">RATINGS OF MOVIES THAT CAME OUT IN 2019</p>
+    <table id="tabela1" cellspacing="20px;" style="margin-left: 75px;" >
 
+       
+        <tr style="padding-top:82px;" >
+            <td id="td1" >
+                <img src="115.jpg" alt="" height="178px" width="178px">
+                <p style="font-weight:bolder">THE IRISHMAN(2019) </p>
+              <div class="stars1">
+                <img src="5yje.png" width="120px" height="20px"></img>
+                </div>           
+             </td>
+            <td id="td1" >
+                <img src="111.jpg" alt="" height="178px" width="178px">
+                <p style="font-weight:bolder;">US(2019) </p>
+               <div class="stars1">
+              <img src="three-stars.png" width="120px" height="20px"></img>
+            </div>
+            </td>
+            <td id="td1">
+                <img src="114.jpg" alt="" height="178px" width="178px" >
+                <p style="font-weight:bolder;" >JOKER(2019) </p>
+               <div class="stars1" >
+                <img src="5yje.png" width="120px" height="20px"></img>
+            </div>
+            </td>
+            <td id="td1">
+                <img src="lionking.jpg" alt="" height="178px" width="178px">
+                <p style="font-weight:bolder;">THE LION KING(2019)</p>
+                <div class="stars1" >
+                    <img src="5yje.png" width="120px" height="20px"></img>
+                </div>
+                </td>
+                <td id="td1">
+                <img src="avengers.jpg" alt="" height="178px" width="178px">
+                <p style="font-weight:bolder;">AVENGERS:ENDGAME(2019)</p>
+               <div class="stars1"  > 
+                <img src="three-stars.png" width="120px" height="20px"></img>
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>
+<section>
+    <p style="background-color:lightcyan;text-align:center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: darkred; margin-left:30px;">RATINGS OF MOVIES THAT CAME OUT IN 2018 </p>
+    <table id="tabela1" cellspacing="20px;" style="margin-left: 75px;" >
+
+       
+        <tr style="padding-top:82px;" >
+            <td id="td1" >
+                <img src="116.jpg" alt="" height="178px" width="178px">
+                <p style="font-weight:bolder">A STAR IS BORN(2018) </p>
+              <div class="stars1">
+                <img src="three-stars.png" width="120px" height="20px"></img>
+            </div>            
+        </td>
+            <td id="td1" >
+                <img src="117.jpg" alt="" height="178px" width="178px">
+                <p style="font-weight:bolder;">THE INCREDIBLES 2(2018) </p>
+               <div class="stars1" >
+                <img src="5yje.png" width="120px" height="20px"></img>
+            </div>
+            </td>
+            <td id="td1">
+                <img src="118.jpg" alt="" height="178px" width="178px" >
+                <p style="font-weight:bolder;" >BLACK PANTHER(2018) </p>
+               <div class="stars1" >
+                <img src="5yje.png" width="120px" height="20px"></img>
+            </div>
+            </td>
+            <td id="td1">
+                <img src="119.png" alt="" height="178px" width="178px">
+                <p style="font-weight:bolder;">VENOM(2018)</p>
+                <div class="stars1" >
+                    <img src="three-stars.png" width="120px" height="20px"></img>
+                </div>
+                </td>
+                <td id="td1">
+                <img src="200.jpg" alt="" height="178px" width="178px">
+                <p style="font-weight:bolder;">DEADPOOL 2(2018)</p>
+               <div class="stars1" > 
+                <img src="three-stars.png" width="120px" height="20px"></img>
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>
+<section>
+    <p style="background-color:lightcyan;text-align:center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: darkred; margin-left:30px;">RATINGS OF OLDER MOVIES </p>
+    <table id="tabela1" cellspacing="20px;" style="margin-left: 55px;" >
+
+       
+        <tr style="padding-top:82px;" >
+            <td id="td1" >
+                <img src="201.png" alt="" height="178px" width="178px">
+                <p style="font-weight:bolder">THE LAST AIRBENDER(2010) </p>
+              <div class="stars1">
+                <img src="three-stars.png" width="120px" height="20px"></img>
+            </div>            
+        </td>
+            <td id="td1" >
+                <img src="202.jpg" alt="" height="178px" width="178px">
+                <p style="font-weight:bolder;">CLUELESS(1995) </p>
+               <div class="stars1" >
+                <img src="5yje.png" width="120px" height="20px"></img>
+            </div>
+            </td>
+            <td id="td1">
+                <img src="203.png" alt="" height="178px" width="178px" >
+                <p style="font-weight:bolder;" >MEAN GIRLS(2004) </p>
+               <div class="stars1" >
+                <img src="5yje.png" width="120px" height="20px"></img>
+            </div>
+            </td>
+            <td id="td1">
+                <img src="204.jpg" alt="" height="178px" width="178px">
+                <p style="font-weight:bolder;">INSIDIOUS(2010)</p>
+                <div class="stars1" >
+                    <img src="three-stars.png" width="120px" height="20px"></img>
+                </div>
+                </td>
+                <td id="td1">
+                <img src="205.png" alt="" height="178px" width="178px">
+                <p style="font-weight:bolder;">THE BREAKFAST CLUB(1985)</p>
+               <div class="stars1" > 
+                <img src="three-stars.png" width="120px" height="20px"></img>
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>
         </article>
+       <article>
+        <p style="background-color:lightcyan;text-align:center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: darkred; margin-left:30px;">RATE THIS MOVIE: </p>
+        <table id="tabela1" cellspacing="20px;" style="margin-left: 510px;" >
+    
+           
+            <tr style="padding-top:82px;" >
+                <td id="td1" >
+                    <img src="206.jpg" alt="" height="178px" width="178px">
+                    <p style="font-weight:bolder">FROZEN 2(2019) </p>
+                    <div class="stars" data-rating="3">
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                        <span class="star">&nbsp;</span>
+                    </div>          
+            </td>
+</tr>
+</table>
+
+       </article>
             <footer style="margin:0px; background-color: #e8e8e8">
                 <div>
                 <table style="margin:0px; padding:0px;">
-        
                     <tr>
                         <td colspan="1" rowspan="1" style="padding:1px;" >
                             <h3 style=" padding-left: 12px;" class="titull">Newsletter</h3>
@@ -127,7 +349,7 @@
                             <div>
                               <p> <span class="dot"></span> Snapchat <span class="dot"></span> Instagram </p>
                                 <br>
-                            <p > <span class="dot"></span> Twiiter .. <span class="dot"></span> Facebook </p>
+                            <p > <span class="dot"></span> Twitter .. <span class="dot"></span> Facebook </p>
                             </div>
                             
                             </div >
@@ -170,5 +392,5 @@
                 </div>
         
             </footer>
-</body>
+</body b>
     </html>

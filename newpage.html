@@ -101,6 +101,7 @@
             font: 24px Arial,sans-serif;
             font-weight: normal;
         }
+     
         #cric {
             font-size: 11px;
             color:#666;
@@ -123,6 +124,26 @@
             border: 2px solid black;
             color: white;
         }
+        .radio {
+            font-weight: 300; 
+            line-height: 33px;
+            color:#22598a;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: monospace;
+        }
+        .title {
+            font-weight: 600;
+            font-size: 18px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+            
+        }
+        .par {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
     </style>
     </head>
     <body>
@@ -135,7 +156,7 @@
             <input id="searchBar" type="text" placeholder="Search"></input>
         </div>
         <div>
-             <a href="alt.html"><img id="logo" src="movie-logo.png" alt="" height="100px" width="100px" style="margin-left: 70px;"></a>
+             <a href="alt.html"><img id="logo" src="logo.png" alt="" height="100px" width="150px" style="margin-left: 70px;"></a>
         </div>
        
     </header>
@@ -157,150 +178,155 @@
     
         <br>
         <br>
-        
-        <section style="padding: 960×321;  border: 0px;">
-            <div style="display: inline-flex;">
-            <div style="padding: 20px; margin-left: 30px; width: 300px;">
-                <div>
-                    <h1 id="header">Top Rated TV Shows</h1>
-                </div>           
-                 <p id="cric">Top 10 as rated by our critics</p>
+        <div id="body1">
 
-
-            <ol type="">
-                <li >
-                    <img height="67" width="45" src="tvshows/bob.bmp" alt="">
-                    <h3 title="Scott Grimes, Damian Lewis">Band Of Brothers (2001)</h3>
-                    <p>The story of Easy Company of the U.S. Army 101st Airborne Division, and their mission in World War II Europe, from Operation Overlord, through V-J Day.</p>
-                </li>
-                <li>
-
-                    <img height="67" width="45" src="tvshows/brba.bmp" alt="">
-                    <h3 title="Bryan Cranston, Aauron Paul">Breaking Bad (2008)</h3>
-                    <p>
-                        A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future. 
-                    </p>
-                </li>
-                <li>
-                    <img height="67" width="45" src="tvshows/chernobyl.bmp" alt="">
-                    <h3 title="Jessie Buckley, Jarred Harris">Chernobyl (2019)</h3>
-                    <p>
+            <section style="padding: 960×321;  border: 0px;">
+                
+                <div style="display: inline-flex;">
+                    <div style="padding: 20px; margin-left: 50px; width: 500px;">
+                        <div>
+                            <h1 id="header">Top Rated TV Shows</h1>
+                        </div>           
+                        <p id="cric">Top 10 as rated by our critics</p>
+                        
+                        
+                        <ol type="">
+                            <li >
+                                <img height="87" width="65" src="tvshows/bob.bmp" alt="">
+                                <h3  class="title" title="Scott Grimes, Damian Lewis">Band Of Brothers (2001)</h3>
+                                <p class="par"> The story of Easy Company of the U.S. Army 101st Airborne Division, and their mission in World War II Europe, from Operation Overlord, through V-J Day.</p>
+                    </li>
+                    <li>
+                        
+                        <img height="87" width="65" src="tvshows/brba.bmp" alt="">
+                        <h3 class="title" title="Bryan Cranston, Aauron Paul">Breaking Bad (2008)</h3>
+                        <p class="par">
+                            A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future. 
+                        </p>
+                    </li>
+                    <li>
+                        <img height="87" width="65" src="tvshows/chernobyl.bmp" alt="">
+                        <h3 class="title" title="Jessie Buckley, Jarred Harris">Chernobyl (2019)</h3>
+                        <p class="par">
                         In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes. 
                     </p>
                 </li>
                 <li>
-                    <img height="67" width="45" src="tvshows/thewire.bmp" alt="">
-                    <h3 title="Dominic West, Lance Reddic">The Wire (2002)</h3>
-                    <p>
+                    <img height="87" width="65" src="tvshows/thewire.bmp" alt="">
+                    <h3 class="title" title="Dominic West, Lance Reddic">The Wire (2002)</h3>
+                    <p class="par">
                         The Baltimore drug scene, as seen through the eyes of drug dealers and law enforcement. 
                     </p>
                 </li>
                 <li>
-                    <img height="67" width="45" src="tvshows/atla.bmp" alt="">
-                    <h3 title="Dee Bradley Baker, Zach Tyler">
-                        Avatar:The Last Airbender(2005)
+                    <img height="87" width="65" src="tvshows/atla.bmp" alt="">
+                    <h3 class="title" title="Dee Bradley Baker, Zach Tyler">
+                         Avatar:The Last Airbender(2005)
                     </h3>
-                    <p>
+                    <p class="par">
                         In a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar, and bring peace to the world. 
                     </p>
                 </li>
                 <li>
-                    <img height="67" width="45" src="tvshows/sherlock.bmp" alt="">
-                    <h3 title="Benedict Cumberbatch, Martin Freeman">
-                        Sherlock (2010)
+                    <img height="87" width="65" src="tvshows/sherlock.bmp" alt="">
+                    <h3 class="title" title="Benedict Cumberbatch, Martin Freeman">
+                         Sherlock (2010)
                     </h3>
-                    <p>
+                    <p class="par">
                         A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London. 
                     </p>
                 </li>
                 <li>
-                    <img height="67" width="45" src="tvshows/wtsu.bmp" alt="">
-                    <h3 title="Asante Blackk, Caleel Harris ">When They See Us (2019)</h3>
-                    <p>Five teens from Harlem become trapped in a nightmare when they're falsely accused of a brutal attack in Central Park. Based on the true story. </p>
+                    <img height="87" width="65" src="tvshows/wtsu.bmp" alt="">
+                    <h3 class="title" title="Asante Blackk, Caleel Harris ">When They See Us (2019)</h3>
+                    <p class="par">Five teens from Harlem become trapped in a nightmare when they're falsely accused of a brutal attack in Central Park. Based on the true story. </p>
                 </li>
                 <li>
-                    <img height="67" width="45" src="tvshows/bmirror.bmp" alt="">
-                    <h3 title="Daniel Lapaine, Hannah John-Kamen">Black Mirror (2011)</h3>
-                    <p>An anthology series exploring a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide. </p>
+                    <img height="87" width="65" src="tvshows/bmirror.bmp" alt="">
+                    <h3 class="title" title="Daniel Lapaine, Hannah John-Kamen">Black Mirror (2011)</h3>
+                    <p class="par">An anthology series exploring a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide. </p>
                 </li>
                 <li>
-                    <img height="67" width="45" src="tvshows/office.bmp" alt="">
-                    <h3 title="Steve Carell, Jenna Fischer">The Office (2005)</h3>
-                    <p>A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium. </p>
+                    <img height="87" width="65" src="tvshows/office.bmp" alt="">
+                    <h3 class="title" title="Steve Carell, Jenna Fischer">The Office (2005)</h3>
+                    <p class="par">A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium. </p>
                 </li>
                 <li>
-                    <img height="67" width="45" src="tvshows/fandg.bmp" alt="">
-                    <h3 title="Linda Cardellini, John Francis Dalay">Freaks And Geeks (1999)</h3>
-                    <p>A high school mathlete starts hanging out with a group of burnouts while her younger brother navigates his freshman year. </p>
+                    <img height="87" width="65" src="tvshows/fandg.bmp" alt="">
+                    <h3 class="title" title="Linda Cardellini, John Francis Dalay">Freaks And Geeks (1999)</h3>
+                    <p class="par">A high school mathlete starts hanging out with a group of burnouts while her younger brother navigates his freshman year. </p>
                 </li>
             </ol>
-               
-                    <br>
-                    <br>
-
-                   <a id="email" href="mailto:nora.berisha@studentet.uni-pr.edu">Email</a>
-                
-            </div>
-
-            <div style=" margin-left:670px; width: 300px;">
-                <h3 style="font-size: 1.8em; font-weight: 600; line-height: 100%;">Pick Your Favorite</h3>
-                <form action="">
-                    <h4 style="font: 1.4em ProximaNova-Bold; font-weight: 600; color:  #000;  text-transform: uppercase;  margin-top: 30px;" >Drama TV Show</h4>
-                    <div style="font-weight: 300; line-height: 33px;">
-
-                        
-                        <input type="radio" name="drama" id="mr-robot">Mr.Robot <br>
-                        <input type="radio" name="drama" id="breaking-bad">Breaking Bad <br>
-                        <input type="radio" name="drama" id="the-leftovers">The Leftovers <br>
-                        <input type="radio" name="drama" id="soa">Sons Of Anarchy <br>
-                        <input type="radio" name="drama" id="thewire">The Wire <br>
-                        <input type="submit" onclick="Vote()" class="vote" value="Vote">   
-                    </div>
-                </form>
-                <form action="">
-                    <h4 style="font: 1.4em ProximaNova-Bold; font-weight: 600; color:  #000;  text-transform: uppercase;  margin-top: 30px;" >Sit-Com</h4>
-                    <div style="font-weight: 300; line-height: 33px;">
-
-                        
-                        <input type="radio" name="sit-com" id="community">Community <br>
-                        <input type="radio" name="sit-com" id="theoffice">The Office US <br>
-                        <input type="radio" name="sit-com" id="b99">Brooklyn-99 <br>
-                        <input type="radio" name="sit-com" id="30rock">30 Rock <br>
-                        <input type="radio" name="sit-com" id="atlanta">Atlanta FX <br>
-                        <input type="submit" onclick="Vote()" class="vote" value="Vote"> 
-                   
-                    </div>
-                </form>
-                
-                <form action="">
-                    <h4 style="font: 1.4em ProximaNova-Bold; font-weight: 600; color:  #000;  text-transform: uppercase;  margin-top: 30px;" >Animated TV Show</h4>
-                    <div style="font-weight: 300; line-height: 33px;">
-
-                        
-                        <input type="radio" name="animated" id="rickandmorty">Rick And Morty <br>
-                        <input type="radio" name="animated" id="horseman">BoJack Horseman <br>
-                        <input type="radio" name="animated" id="avatar">Avatar:The Last Airbender <br>
-                        <input type="radio" name="animated" id="daria">Daria <br>
-                        <input type="radio" name="animated" id="simpsons">The Simpsons <br>
-                        <input type="submit" onclick="Vote()" style="margin-bottom: 15px;" class="vote" value="Vote">   
-                    </div>
-                </form>
-            </div>
-            </div>
             
-              
-        </section>
-
-            <footer style=" background-color: #e8e8e8">
-                <div>
-                <table>
+            <br>
+            <br>
+            
+            <a id="email" href="mailto:nora.berisha@studentet.uni-pr.edu">Email</a>
+            
+        </div>
         
-                    <tr>
-                        <td colspan="1" rowspan="1" >
-                            <div style="margin-right: 80px;">
-
-                                <h3 style=" padding-left: 15px; margin-bottom: 15px; margin-top: 1px;" class="titull">Newsletter</h3>
-                                <p style="padding-left: 15px; margin-bottom: 18px;" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ea, consectetur voluptate fugit ullam ab.</p>
+        
+        <div style=" margin-left:370px; width: 300px;">
+            <h3 style="font-size: 1.8em; font-weight: 600; line-height: 100%;">Pick Your Favorite</h3>
+            <form action="">
+                <h4 style="font: 1.4em ProximaNova-Bold; font-weight: 600; color:  #000;  text-transform: uppercase;  margin-top: 30px;" >Drama TV Show</h4>
+                <div class="radio">
+                    
+                    
+                    <input type="radio" name="drama" id="mr-robot">Mr.Robot <br>
+                    <input type="radio" name="drama" id="breaking-bad">Breaking Bad <br>
+                    <input type="radio" name="drama" id="the-leftovers">The Leftovers <br>
+                    <input type="radio" name="drama" id="soa">Sons Of Anarchy <br>
+                    <input type="radio" name="drama" id="thewire">The Wire <br>
+                    <input type="submit" onclick="Vote()" class="vote" value="Vote">   
+                </div>
+            </form>
+            <form action="">
+                <h4 style="font: 1.4em ProximaNova-Bold; font-weight: 600; color:  #000;  text-transform: uppercase;  margin-top: 30px;" >Sit-Com</h4>
+                <div class="radio">
+                    
+                    
+                    <input type="radio" name="sit-com" id="community">Community <br>
+                    <input type="radio" name="sit-com" id="theoffice">The Office US <br>
+                    <input type="radio" name="sit-com" id="b99">Brooklyn-99 <br>
+                    <input type="radio" name="sit-com" id="30rock">30 Rock <br>
+                    <input type="radio" name="sit-com" id="atlanta">Atlanta FX <br>
+                    <input type="submit" onclick="Vote()" class="vote" value="Vote"> 
+                    
+                </div>
+            </form>
+            
+            <form action="">
+                <h4 style="font: 1.4em ProximaNova-Bold; font-weight: 600; color:  #000;  text-transform: uppercase;  margin-top: 30px;" >Animated TV Show</h4>
+                <div class="radio">
+                    
+                    
+                    <input type="radio" name="animated" id="rickandmorty">Rick And Morty <br>
+                    <input type="radio" name="animated" id="horseman">BoJack Horseman <br>
+                    <input type="radio" name="animated" id="avatar">Avatar:The Last Airbender <br>
+                    <input type="radio" name="animated" id="daria">Daria <br>
+                    <input type="radio" name="animated" id="simpsons">The Simpsons <br>
+                    <input type="submit" onclick="Vote()" style="margin-bottom: 15px;" class="vote" value="Vote">   
+                </div>
+            </form>
+        </div>
+        
+        
+          </div>
+        </div>
+    </section>
+</div>
+    
+<footer style=" background-color: #e8e8e8">
+    <div>
+        <table>
+            
+            <tr>
+                <td colspan="1" rowspan="1" >
+                    <div style="margin-right: 80px;">
+                        
+                        <h3 style=" padding-left: 15px; margin-bottom: 15px; margin-top: 1px;" class="titull">Newsletter</h3>
+                        <p style="padding-left: 15px; margin-bottom: 18px;" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ea, consectetur voluptate fugit ullam ab.</p>
                                 <div   style=" padding-left: 15px;">
                                     <div style="display: inline-flex;">
 

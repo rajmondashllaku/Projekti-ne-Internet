@@ -1,0 +1,152 @@
+.main {
+	background-image: url("../images/01.jpg");
+	background-size: cover;
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	height: 100vh;
+}
+.main h2 {
+	font-size: 32px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+.content-middle {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	left: 0;
+	transform: translate(0, -50%);
+	padding: 0 60px;
+	top: 80%;
+}
+.content .banner {
+	margin-top: -30px;
+	width: 72%;
+	float: right;
+	box-shadow: 5px 0 30px 0 rgba(0, 0, 0, 9)
+}
+.video-image {
+	position: relative;
+}
+.video-image:before {
+	background: rgba(37, 41, 51, 0.4);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+.video-image a i {
+	color: #ffffff;
+	text-align: center;
+	line-height: 60px;
+	width: 60px;
+	height: 60px;
+	background: #c9b281;
+	display: inline-block;
+	margin: 0 auto;
+	border-radius: 50%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 99;
+	font-size: 20px;
+	transition: all 0.5s ease-out 0s;
+}
+.video-image a i:hover {
+	background: #323232;
+}
+.countdown {
+	display: inline-block;
+	text-align: center;
+	margin: 0px 20px;
+}
+.countdown span {
+	font-size: 40px;
+	line-height: 40px;
+}
+.countdown p {
+	font-size: 16px;
+	text-transform: capitalize;
+	margin-bottom: 0;
+}
+.countdown.small {
+	display: inline-block;
+	text-align: center;
+	margin: 0px 10px;
+}
+.countdown.small span {
+	font-size: 30px;
+	line-height: 30px;
+}
+.countdown.medium {
+	display: inline-block;
+	text-align: center;
+	margin: 0px 30px;
+}
+.countdown.medium span {
+	font-size: 50px;
+	line-height: 50px;
+}
+.countdown.medium p {
+	font-size: 20px;
+	text-transform: capitalize;
+}
+.countdown.large {
+	display: inline-block;
+	text-align: center;
+	margin: 0px 20px;
+}
+.countdown.large span {
+	font-size: 70px;
+	line-height: 70px;
+}
+.countdown.large p {
+	font-size: 24px;
+	text-transform: capitalize;
+}
+.countdown.gray-bg {
+	padding: 10px;
+}
+.countdown.countdown-border {
+	padding: 10px;
+	border: 2px solid #eeeeee;
+}
+.countdown.round {
+	padding: 30px;
+	border: 7px solid #eeeeee;
+	border-radius: 50%;
+	width: 140px;
+	height: 140px;
+}
+.countdown.round.small {
+	width: 100px;
+	height: 100px;
+	padding: 15px 10px;
+}
+.countdown.round.medium {
+	width: 150px;
+	height: 150px;
+	padding: 15px;
+}
+.countdown.round.medium span {
+	line-height: 68px;
+}
+.countdown.round.large {
+	width: 190px;
+	height: 190px;
+	padding: 20px;
+}
+.countdown.round.large span {
+	line-height: 92px;
+}
+.countdown.text-white p {
+	color: #ffffff;
+}
+.countdown.round.text-white {
+	border-color: rgba(255, 255, 255, 0.3);
+}

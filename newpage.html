@@ -10,6 +10,11 @@
         {
             alert("Thanks for voting!")
         }
+        
+        function changeColor(){
+            c.fillStyle='black';
+        }
+        
     </script>
     <style>
  *{
@@ -142,11 +147,11 @@
             font-size: 16px;
             font-weight: 500;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            
+
         }
     </style>
     </head>
-    <body>
+    <body >
         
     
         <div id="mainDiv" >
@@ -164,13 +169,13 @@
         <ul>
             <li><a href="alt.html" style="color: white;">Home</a></li>
             <li> | </li> 
-            <li id="style1"> <a href="style.html" style="color: white;">Style </a></li> 
+            <li id="style1"> <a href="style.html" style="color: white;">Zodiac Based Movies </a></li> 
             <li> | </li> 
             <li> <a style="color: white;" href="demo1.html">Demo </a></li> 
             <li> | </li> 
             <li> <a href="" style="color: white;">Gallery </a></li> 
             <li> |</li> 
-            <li id="home"> <a href="">About</a></li> 
+            <li id="home"> <a href="">Top 10</a></li> 
         </ul>
     </nav>
     <br>
@@ -194,14 +199,14 @@
                             <li >
                                 <img height="87" width="65" src="tvshows/bob.bmp" alt="">
                                 <h3  class="title" title="Scott Grimes, Damian Lewis">Band Of Brothers (2001)</h3>
-                                <p class="par"> The story of Easy Company of the U.S. Army 101st Airborne Division, and their mission in World War II Europe, from Operation Overlord, through V-J Day.</p>
+                                <p class="par"> The story of <strong> Easy Company </strong> of the U.S. Army 101st Airborne Division, and their mission in World War II Europe, from Operation Overlord, through V-J Day.</p>
                     </li>
                     <li>
                         
                         <img height="87" width="65" src="tvshows/brba.bmp" alt="">
                         <h3 class="title" title="Bryan Cranston, Aauron Paul">Breaking Bad (2008)</h3>
                         <p class="par">
-                            A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future. 
+                            A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling <abbr title="methemphetamine">meth</abbr> in order to secure his <em>family's future</em>. 
                         </p>
                     </li>
                     <li>
@@ -215,7 +220,7 @@
                     <img height="87" width="65" src="tvshows/thewire.bmp" alt="">
                     <h3 class="title" title="Dominic West, Lance Reddic">The Wire (2002)</h3>
                     <p class="par">
-                        The Baltimore drug scene, as seen through the eyes of drug dealers and law enforcement. 
+                        The <u>Baltimore </u> drug scene, as seen through the eyes of drug dealers and law enforcement. 
                     </p>
                 </li>
                 <li>
@@ -267,7 +272,24 @@
         
         
         <div style=" margin-left:370px; width: 300px;">
-            <h3 style="font-size: 1.8em; font-weight: 600; line-height: 100%;">Pick Your Favorite</h3>
+            
+                <canvas id="mycanvas" height="100" width="300" style="margin-right: 40px;" onclick="changeColor"></canvas>
+                <script>
+                    var canvas = document.getElementById("mycanvas");
+                    var c = canvas.getContext("2d");
+        
+                     c.font = '25pt Arial';
+                     c.fillStyle = 'rgb(100,31,221)';
+                     c.strokeStyle = 'black';
+        
+                     var x = 20, 
+                     y = 60, 
+                    text = 'Pick your favorites!';
+                    c.fillText(text , x, y);
+                    c.strokeText(text, x, y);
+                </script>
+            
+            
             <form action="">
                 <h4 style="font: 1.4em ProximaNova-Bold; font-weight: 600; color:  #000;  text-transform: uppercase;  margin-top: 30px;" >Drama TV Show</h4>
                 <div class="radio">

@@ -255,6 +255,7 @@ ul li:hover #menu li
                     <div style="padding: 20px; margin-left: 50px; width: 500px;">
                         <div>
                             <h1 class="header">Top Rated TV Shows</h1>
+                            
                         </div>           
                         <p id="cric">Top 10 as rated by our critics</p>
                         
@@ -351,7 +352,23 @@ ul li:hover #menu li
                     c.fillText(text , x, y);
                     c.strokeText(text, x, y);
                 </script>
-            
+<div style="">
+    <h3 style="font-family:verdana;">First put your age</h3 style="font-family:verdana;">
+
+    <input id="age" value="" style="width:40px;border: 2px solid grey;border-radius: 4px; color: red;" />
+    
+    <button onclick="mosha()" style="background-color:red;width:60px">Click</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    function mosha() {
+      var age, vote;
+      age = document.getElementById("age").value;
+      vote = (age < 18) ? "Too young":"Old enough";
+      document.getElementById("demo").innerHTML = vote + " to vote.";
+    }
+    </script></div>
             
             <form action="">
                 <h4 style="font: 1.4em ProximaNova-Bold; font-weight: 600; color:  #000;  text-transform: uppercase;  margin-top: 30px;" >Drama TV Show</h4>

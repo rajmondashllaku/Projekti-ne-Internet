@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=div, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <script src="nepage.js"></script>
+    <title>Top 10 </title>
     <script>
         function Vote()
         {
@@ -98,13 +99,13 @@
         font-size: 75%;
         vertical-align: top;
         }
-        #header {
+        .header {
             margin-bottom: 2px;
             border-bottom: medium none;
-            font-size: 27px;
+            font-size: 34px;
             color:#424242;
             font: 24px Arial,sans-serif;
-            font-weight: normal;
+            font-weight: 700;
         }
      
         #cric {
@@ -149,6 +150,34 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
         }
+        .header3{
+            font-size: 24px;
+            color:#111111;
+            font-family: 'Alfa Slab One';
+            font-weight: 600;
+            line-height: 1.4;
+            margin-top: 0;
+            margin-bottom: 24px;
+            letter-spacing: .007rem;
+            word-wrap: break-word;
+        }
+        .paragraf {
+            margin: 0 0 24px;
+            font-family: Georgia;
+            letter-spacing: .007rem;
+            line-height: 1.6875;
+            font-size: 1.16rem;
+            font-weight: 400;
+            color: #111111;
+            word-wrap: break-word;
+            
+
+        }
+        .imazh {
+            height: 300px;
+            width: 400px;
+        }
+       
     </style>
     </head>
     <body >
@@ -190,7 +219,7 @@
                 <div style="display: inline-flex;">
                     <div style="padding: 20px; margin-left: 50px; width: 500px;">
                         <div>
-                            <h1 id="header">Top Rated TV Shows</h1>
+                            <h1 class="header">Top Rated TV Shows</h1>
                         </div>           
                         <p id="cric">Top 10 as rated by our critics</p>
                         
@@ -335,6 +364,114 @@
         
         
           </div>
+        </div>
+        <div style="margin-left: 70px; margin-bottom: 170px;" >
+            <h1 class="header">Top 10 TV Shows With Plot Twists </h1>
+            <ol>
+                <li>
+                    <h3 class="header3">Game Of Thrones</h3>
+                
+                    <p>
+                        <img id='tv1' onclick="Seen()" src="twists/spoiler.bmp" class="imazh" alt="" height="550" width="800">
+                        
+                    </p>
+                    <br>
+                    <div>
+                        <p id="p1" class="paragraf">Spoilers for Game Of Thrones</p>
+                        <script src="newpage.js"></script>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="header3">House Of Cards</h3>
+                    <p>
+                        <img id="tv2" src="twists/spoiler.bmp" class="imazh" onclick="Seen1()" alt="" height="550" width="800">
+                        <script src="newpage.js"></script>
+                    </p>
+                    <div>
+                        <p id="p2" class="paragraf">Spoilers for House Of Cards S1E9</p>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="header3">Mr.Robot</h3>
+                    <p>
+                        <img id="tv3" src="twists/spoiler.bmp" class="imazh" onclick="Seen2()" alt="" height="550" width="800">
+                        <script src="newpage.js"></script>
+                    </p>
+                    <div>
+                        <p id="p3" class="paragraf">Spoilers for Mr.Robot S1E9</p>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="header3">Breaking Bad</h3>
+                    <p>
+                        <img src="twists/spoiler.bmp" class="imazh"  onclick="Seen3()" alt="" id="tv4" height="550" width="800">
+                        <script src="newpage.js"></script>
+                    </p>
+                    <div>
+                        <p id="p4"class="paragraf">Spoilers for Breaking Bad S3E5 </p>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="header3">Dexter</h3>
+                    <p>
+                        <img src="twists/spoiler.bmp" class="imazh" alt="" id="tv5" height="550" width="800" onclick="Seen4()">
+                        <script src="newpage.js"></script>
+                    </p>
+                    <div>
+                        <p id="p5" class="paragraf">Spoilers for Dexter S3E5</p>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="header3">Sherlock</h3>
+                    <p>
+                        <img src="twists/spoiler.bmp" class="imazh" alt="" id="tv6" height="550" width="800" onclick="Seen5()">
+                        <script src="newpage.js"></script>
+                    </p>
+                    <div>
+                        <p id="p6" class="paragraf">Spoilers for Sherlock S4E3</p>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="header3">Homeland</h3>
+                    <p>
+                        <img src="twists/spoiler.bmp" class="imazh" alt="" id="tv7" height="550" width="800" onclick="Seen6()">
+                        <script src="newpage.js"></script>
+                    </p>
+                    <div>
+                        <p id="p7" class="paragraf">Spoilers for Homeland S2E5</p>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="header3">Twin Peaks</h3>
+                    <p>
+                        <img src="twists/spoiler.bmp" class="imazh" alt="" id="tv8" height="550" width="800" onclick="Seen7()">
+                        <script src="newpage.js"></script>
+                    </p>
+                    <div>
+                        <p id="p8" class="paragraf">Spoilers for Twin Peaks S1E5</p>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="header3">Lost</h3>
+                    <p>
+                        <img src="twists/spoiler.bmp" class="imazh" alt="" id="tv9" height="550" width="800" onclick="Seen8()">
+                        <script src="newpage.js"></script>
+                    </p>
+                    <div>
+                        <p id="p9" class="paragraf">Spoilers for Lost S3E10</p>
+                    </div>
+                </li>
+                <li>
+                    <h3 class="header3">Westworld</h3>
+                    <p>
+                        <img src="twists/spoiler.bmp" class="imazh" alt="" id="tv10" height="550" width="800" onclick="Seen9()">
+                        <script src="newpage.js"></script>
+                    </p>
+                    <div>
+                        <p id="p10" class="paragraf">Spoilers for Westworld S2E10</p>
+                    </div>
+                </li>
+            </ol>
         </div>
     </section>
 </div>

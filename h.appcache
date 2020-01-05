@@ -1,13 +1,9 @@
 CACHE MANIFEST
-
 CACHE:
-
-./newpage.html
-./newpage.css
-./style.html
+index2.html
+index2.css
 
 NETWORK:
 *
-
 
 FALLBACK:

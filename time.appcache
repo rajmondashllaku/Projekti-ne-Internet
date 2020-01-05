@@ -1,0 +1,14 @@
+CACHE MANIFEST
+#DATA 2020-01-05
+
+CACHE:
+/alt.html
+/newpage.html
+/newpage.js
+
+
+NETWORK:
+*
+
+
+FALLBACK:

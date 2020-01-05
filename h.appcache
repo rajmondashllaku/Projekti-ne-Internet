@@ -1,0 +1,13 @@
+CACHE MANIFEST
+
+CACHE:
+
+./newpage.html
+./newpage.css
+./style.html
+
+NETWORK:
+*
+
+
+FALLBACK:

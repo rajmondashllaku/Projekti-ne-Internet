@@ -111,7 +111,15 @@
             border-radius: 50%;
             display: inline-block;
         }
-            
+        ul li #menu li{
+ display: none;
+
+}
+
+ul li:hover #menu li
+ {
+ 
+ display:block;}
     </style>
     
     </head>
@@ -168,7 +176,11 @@
             <li> | </li> 
             <li  style="color:white;"> <a href="style.html"style="color: white;" >Zodiac Based Movies</a></li> 
             <li> | </li> 
-            <li id="home"> <a href="demo1.html" style="color:red;border: 0.5px solid #e8e8e8;" >Ratings </a></li> 
+            <li id="home"> <a href="demo1.html" style="color:red;border: 0.5px solid #e8e8e8;" >Ratings </a>
+                <ul id="menu">
+                    <li><a href="demo1.html#mr">Movie Ratings</a></li>
+                    <li><a href="demo1.html#rm">Rate this Movie</a></li></ul>
+            </li> 
             <li> | </li> 
             <li> <a href="ird.html" style="color: white;">Countdown </a></li> 
             <li> |</li> 
@@ -184,7 +196,7 @@
         <article >
 <section>
    
-    <h1 style="text-align:center; font-style:italic;font-family:Arial, Helvetica, sans-serif;font-size:x-large;margin-left: 30px;color:lightcyan">MOVIE RATINGS</h1>
+    <h1 style="text-align:center; font-style:italic;font-family:Arial, Helvetica, sans-serif;font-size:x-large;margin-left: 30px;color:lightcyan" id="mr">MOVIE RATINGS</h1>
     <p style="background-color:lightcyan;text-align:center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: darkred; margin-left:30px;">RATINGS OF MOVIES THAT CAME OUT IN 2019</p>
     <table id="tabela1" cellspacing="20px;" style="margin-left: 75px;" >
 
@@ -450,7 +462,7 @@
 </section>
         </article>
        <article>
-        <p style="background-color:lightcyan;text-align:center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: darkred; margin-left:30px;">RATE THIS MOVIE: </p>
+        <p style="background-color:lightcyan;text-align:center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: darkred; margin-left:30px;" id="rm">RATE THIS MOVIE: </p>
         <table id="tabela1" cellspacing="20px;" style="margin-left: 510px;" >
     
            

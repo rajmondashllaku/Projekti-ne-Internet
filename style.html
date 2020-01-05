@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" manifest="h.appcache">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=div, initial-scale=1.0">
@@ -107,6 +107,15 @@
             text-align: center;
           
         }
+        ul li #menu li{
+ display: none;
+
+}
+
+ul li:hover #menu li
+ {
+ 
+ display:block;}
         
     </style>
     </head>
@@ -130,7 +139,11 @@
             <li> | </li> 
             <li id="style1"> <a href="style.html" >Zodiac Based Movies</a></li> 
             <li> | </li> 
-            <li> <a href="demo1.html" style="color: white;">Ratings </a></li> 
+            <li> <a href="demo1.html" style="color: white;">Ratings </a>
+                <ul id="menu">
+                    <li><a href="demo1.html#mr">Movie Ratings</a></li>
+                    <li><a href="demo1.html#rm">Rate this Movie</a></li></ul>
+            </li> 
             <li> | </li> 
             <li> <a href="ird.html" style="color: white;">Countdown </a></li> 
             <li> |</li> 
